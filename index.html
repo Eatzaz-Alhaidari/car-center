@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مركز السرعة | صيانة ميكانيكية وغسيل سيارات متكامل</title>
+  <meta name="description" content="مركز السرعة هو وجهتك المتكاملة لخدمات السيارات يجمع بين دقة الميكانيك واحترافية الغسيل والتلميع في محل واحد. صيانة دورية، فحص كمبيوتر، غسيل نانو وباقات مجمعة مميزة.">
+  
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-status">
+        <span class="status-indicator"></span>
+        <span>مفتوح الآن نرحب بكم | خصم 20% على الباقات المجمعة لفترة محدودة</span>
+      </div>
+      <div class="top-contact">
+        <a href="tel:+966501234567" class="top-link" id="topPhoneLink">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span dir="ltr">+966 50 123 4567</span>
+        </a>
+        <span class="divider-dot">•</span>
+        <span class="top-hours">الرياض - طريق الملك فهد</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <div class="logo-icon-box">
+          <svg class="logo-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+            <circle cx="7" cy="17" r="2"/>
+            <path d="M9 17h6"/>
+            <circle cx="17" cy="17" r="2"/>
+          </svg>
+          <span class="logo-spark"></span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">مركز السرعة</span>
+          <span class="logo-subtitle">ميكانيك • غسيل وتلميع</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">الرئيسية</a>
+        <a href="#services" class="nav-link">الخدمات</a>
+        <a href="#packages" class="nav-link">الباقات المجمعة</a>
+        <a href="#why-us" class="nav-link">لماذا نحن</a>
+        <a href="#testimonials" class="nav-link">آراء العملاء</a>
+        <a href="#location" class="nav-link">الموقع والمواعيد</a>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <a href="tel:+966501234567" class="btn btn-outline-navy header-phone-btn" id="headerPhoneBtn">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>اتصل بنا</span>
+        </a>
+        <button type="button" class="btn btn-primary-orange header-book-btn open-booking-modal" id="headerBookBtn" data-service="موعد عام">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>احجز موعد</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="فتح القائمة الرئيسية">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="drawer-title">مركز السرعة</span>
+      <button class="drawer-close" id="drawerClose" aria-label="إغلاق القائمة">✕</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#hero" class="drawer-link">الرئيسية</a>
+      <a href="#services" class="drawer-link">الخدمات</a>
+      <a href="#packages" class="drawer-link">الباقات المجمعة</a>
+      <a href="#why-us" class="drawer-link">لماذا نحن</a>
+      <a href="#testimonials" class="drawer-link">آراء العملاء</a>
+      <a href="#location" class="drawer-link">الموقع والمواعيد</a>
+    </div>
+    <div class="drawer-actions">
+      <button type="button" class="btn btn-primary-orange w-full open-booking-modal" data-service="موعد عام جوال">
+        <span>احجز موعدك الآن عبر واتساب</span>
+      </button>
+      <a href="tel:+966501234567" class="btn btn-outline-navy w-full">
+        <span>اتصل بنا: 0501234567</span>
+      </a>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <main>
+    <!-- 1. Hero Section (الواجهة العليا) -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>المركز المتكامل الأول لخدمات السيارات</span>
+          </div>
+          <h1 class="hero-title">
+            مركز السرعة
+            <span class="hero-title-highlight">ميكانيك دقيق وغسيل فاخر</span>
+            في محل واحد
+          </h1>
+          <p class="hero-description">
+            وجهتك الأولى للعناية المتكاملة بسيارتك. نوفر وقتك الثمين ونمنحك راحة البال عبر جمع الصيانة الميكانيكية الشاملة بأيدي خبراء مع أحدث تقنيات الغسيل والتلميع بالنانو تحت سقف واحد وبضمان معتمد.
+          </p>
+
+          <div class="hero-cta-group">
+            <button type="button" class="btn btn-primary-orange btn-lg open-booking-modal" id="heroBookBtn" data-service="حجز فوري من الواجهة الرئيسية">
+              <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>احجز موعد</span>
+            </button>
+            <a href="tel:+966501234567" class="btn btn-navy-solid btn-lg" id="heroCallBtn">
+              <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>اتصل بنا</span>
+            </a>
+          </div>
+
+          <!-- Hero Trust Metrics / Points -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">ضمان على القطع والعمل</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">45 دقيقة</div>
+              <div class="stat-label">متوسط إنجاز الباقات السريعة</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">+15 سنة</div>
+              <div class="stat-label">خبرة فنيين معتمدين</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="./assets/hero.jpg" alt="مركز السرعة لصيانة وغسيل السيارات" class="hero-img" loading="eager">
+            <div class="hero-overlay-card">
+              <div class="overlay-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <div class="overlay-info">
+                <span class="overlay-title">خدمة متكاملة في زيارة واحدة</span>
+                <span class="overlay-desc">صلح سيارتك واستلمها نظيفة ولامعة!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Services Section (الخدمات في قسمين: الميكانيك والغسيل) -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">خدماتنا الشاملة</span>
+          <h2 class="section-title">صيانة احترافية وعناية متقدمة بسيارتك</h2>
+          <p class="section-subtitle">نقدم خدمات متخصصة مقسمة بدقة بين العناية الميكانيكية الصارمة وفنون الغسيل والتلميع الفاخر</p>
+        </div>
+
+        <!-- Service Category 1: الميكانيك -->
+        <div class="service-category" id="mechanic-services">
+          <div class="category-header">
+            <div class="category-title-wrap">
+              <div class="category-icon-badge navy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">خدمات الميكانيك والصيانة الدورية</h3>
+                <p class="category-desc">أجهزة فحص إلكترونية حديثة وفنيون خبراء لصيانة محركك وأجهزة الأمان</p>
+              </div>
+            </div>
+            <span class="badge-pill">5 خدمات ميكانيكية متخصصة</span>
+          </div>
+
+          <div class="services-grid">
+            <!-- Service 1: فحص -->
+            <div class="service-card">
+              <div class="service-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <h4 class="service-card-title">فحص شامل وكمبيوتر</h4>
+              <p class="service-card-text">كشف إلكتروني متقدم لجميع حساسات وأنظمة السيارة والمحرك والجير مع تقرير فني دقيق ومفصل يوضح حالة السيارة بدقة.</p>
+              <ul class="service-features">
+                <li>قراءة الأعطال بجهاز OBD-II متطور</li>
+                <li>فحص 35 نقطة أمان ميكانيكية</li>
+                <li>تقرير رقمي يرسل لواتسابك مباشرة</li>
+              </ul>
+              <button type="button" class="service-book-btn open-booking-modal" data-service="فحص شامل وكمبيوتر">
+                <span>احجز فحص كمبيوتر</span>
+                <span class="arrow-icon">←</span>
+              </button>
+            </div>
+
+            <!-- Service 2: زيت -->
+            <div class="service-card">
+              <div class="service-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              </div>
+              <h4 class="service-card-title">تغيير الزيوت والفلاتر</h4>
+              <p class="service-card-text">استخدام أجود أنواع الزيوت التخليقية العالمية المعتمدة لضمان أطول عمر للمحرك مع فلاتر أصلية وفحص سوائل المحرك مجاناً.</p>
+              <ul class="service-features">
+                <li>زيوت تخليقية كاملة (5,000 و10,000 كم)</li>
+                <li>استبدال فلتر الزيت بقطع أصلية</li>
+                <li>تزويد سوائل التبريد والفرامل مجاناً</li>
+              </ul>
+              <button type="button" class="service-book-btn open-booking-modal" data-service="تغيير زيت وفلاتر">
+                <span>احجز تغيير زيت</span>
+                <span class="arrow-icon">←</span>
+              </button>
+            </div>
+
+            <!-- Service 3: فرامل -->
+            <div class="service-card">
+              <div class="service-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              </div>
+              <h4 class="service-card-title">صيانة وتغيير الفرامل</h4>
+              <p class="service-card-text">خدمة متكاملة لمنظومة الكبح لضمان سلامتك القصوى: استبدال الفحمات، فحص الهوبات، واختبار كفاءة زيت وضغط الفرامل ونظام ABS.</p>
+              <ul class="service-features">
+                <li>فحمات سيراميك وأصلية عالية التحمل</li>
+                <li>خرط هوبات بأجهزة ليزر فائقة الدقة</li>
+                <li>فحص وتنسيم دورة زيت الفرامل</li>
+              </ul>
+              <button type="button" class="service-book-btn open-booking-modal" data-service="صيانة الفرامل">
+                <span>احجز صيانة الفرامل</span>
+                <span class="arrow-icon">←</span>
+              </button>
+            </div>
+
+            <!-- Service 4: بطارية -->
+            <div class="service-card">
+              <div class="service-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="13" x2="23" y2="11"/><line x1="6" y1="10" x2="6" y2="14"/><line x1="4" y1="12" x2="8" y2="12"/><line x1="12" y1="12" x2="15" y2="12"/></svg>
+              </div>
+              <h4 class="service-card-title">فحص وتبديل البطاريات</h4>
+              <p class="service-card-text">فحص إلكتروني فوري لكفاءة البطارية وقوة شحن الدينامو، مع توفير أفضل الماركات العالمية المعتمدة مع ضمان مكتوب.</p>
+              <ul class="service-features">
+                <li>كشف قوة الشحن والجهد الكهربائي</li>
+                <li>بطاريات أصلية بضمان استبدال معتمد</li>
+                <li>تنظيف وعزل أقطاب التوصيل</li>
+              </ul>
+              <button type="button" class="service-book-btn open-booking-modal" data-service="فحص وبطاريات">
+                <span>احجز خدمة البطارية</span>
+                <span class="arrow-icon">←</span>
+              </button>
+            </div>
+
+            <!-- Service 5: تكييف -->
+            <div class="service-card service-card-highlight">
+              <div class="service-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+              </div>
+              <h4 class="service-card-title">صيانة وشحن التكييف</h4>
+              <p class="service-card-text">استمتع ببرودة قطبية في حر الصيف! فحص شامل لدورة التكييف، كشف التسريبات بغاز النيتروجين، وتعبئة فريون أصلي 100%.</p>
+              <ul class="service-features">
+                <li>شحن فريون أمريكي R134a أصلي نقي</li>
+                <li>تنظيف ثلاجة المكيف وتغيير الفلتر</li>
+                <li>تعقيم مسارات الهواء وإزالة الروائح</li>
+              </ul>
+              <button type="button" class="service-book-btn open-booking-modal" data-service="صيانة وشحن تكييف">
+                <span>احجز صيانة التكييف</span>
+                <span class="arrow-icon">←</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Category 2: الغسيل والعناية -->
+        <div class="service-category mt-12" id="wash-services">
+          <div class="category-header">
+            <div class="category-title-wrap">
+              <div class="category-icon-badge orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">خدمات الغسيل الفاخر والتلميع المتطور</h3>
+                <p class="category-desc">تقنيات غسيل بدون خدوش بمواد إيطالية وأمريكية تعيد لسيارتك لمعان صالة العرض</p>
+              </div>
+            </div>
+            <span class="badge-pill orange-pill">4 خدمات تجميلية احترافية</span>
+          </div>
+
+          <div class="services-grid services-grid-4">
+            <!-- Service 1: خارجي -->
+            <div class="service-card">
+              <div class="service-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+              </div>
+              <h4 class="service-card-title">غسيل خارجي نانو ورغوي</h4>
+              <p class="service-card-text">غسيل متطور برغوة ثلجية كثيفة ومناشف مايكروفايبر معقمة تحمي البودي من الدوائر، مع غسيل أسفل الهيكل وتلميع الجنوط.</p>
+              <ul class="service-features">
+                <li>شامبو نانو متعادل الحموضة (pH neutral)</li>
+                <li>تنظيف عالي الضغط ومضاد للخدوش</li>
+                <li>تلميع وحماية الكفرات بطبقة لامعة</li>
+              </ul>
+              <button type="button" class="service-book-btn open-booking-modal" data-service="غسيل خارجي نانو">
+                <span>احجز غسيل خارجي</span>
+                <span class="arrow-icon">←</span>
+              </button>
+            </div>
+
+            <!-- Service 2: داخلي -->
+            <div class="service-card">
+              <div class="service-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <h4 class="service-card-title">تنظيف داخلي وتعقيم عميق</h4>
+              <p class="service-card-text">كنس دقيق بالشفط القوي وإزالة البقع من المراتب والأرضيات بأجهزة البخار الحار وتعقيم كامل للمقصورة يقتل 99.9% من الجراثيم.</p>
+              <ul class="service-features">
+                <li>تنظيف بالبخار الساخن للمقاعد والأرضية</li>
+                <li>تلميع وترطيب الجلد وحماية الطبلون</li>
+                <li>تعقيم فتحات التكييف وتعطير فرنسي</li>
+              </ul>
+              <button type="button" class="service-book-btn open-booking-modal" data-service="تنظيف داخلي وتعقيم">
+                <span>احجز تنظيف داخلي</span>
+                <span class="arrow-icon">←</span>
+              </button>
+            </div>
+
+            <!-- Service 3: تلميع -->
+            <div class="service-card">
+              <div class="service-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <h4 class="service-card-title">تلميع وتشميع احترافي</h4>
+              <p class="service-card-text">معالجة الطلاء متعددة المراحل لإزالة الخدوش السطحية وبهتان الشمس وإعادة البريق والعمق اللوني مع طبقة واكس واقية.</p>
+              <ul class="service-features">
+                <li>معالجة الخدوش السطحية ودوائر الغسيل</li>
+                <li>تلميع وتصفية الشمعات الأمامية</li>
+                <li>طبقة واكس وحماية سيراميك هيدروفوبيك</li>
+              </ul>
+              <button type="button" class="service-book-btn open-booking-modal" data-service="تلميع وتشميع احترافي">
+                <span>احجز تلميع احترافي</span>
+                <span class="arrow-icon">←</span>
+              </button>
+            </div>
+
+            <!-- Service 4: تنظيف محرك -->
+            <div class="service-card">
+              <div class="service-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"/><line x1="12" y1="2" x2="12" y2="12"/></svg>
+              </div>
+              <h4 class="service-card-title">تنظيف وحماية المحرك</h4>
+              <p class="service-card-text">غسيل جاف متخصص لحجرة المحرك بتقنية البخار الخالي من الرطوبة الضارة مع حماية التوصيلات الكهربائية وعزل الأجزاء البلاستيكية.</p>
+              <ul class="service-features">
+                <li>إزالة آمنة لزيوت وشحوم المحرك المتراكمة</li>
+                <li>عزل وحماية الحساسات والكمبيوتر</li>
+                <li>تلميع وحماية خراطيم وبلاستيك المحرك</li>
+              </ul>
+              <button type="button" class="service-book-btn open-booking-modal" data-service="تنظيف وغسيل المحرك">
+                <span>احجز تنظيف المحرك</span>
+                <span class="arrow-icon">←</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Bundled Packages Section (باقات مجمعة مثل غسيل + تغيير زيت بأسعار تجريبية) -->
+    <section class="section packages-section" id="packages">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">وفر أكثر مع الباقات الذكية</span>
+          <h2 class="section-title">باقات مجمعة: ميكانيك + غسيل بسعر أوفر</h2>
+          <p class="section-subtitle">جمعنا لك الخدمات الأكثر طلباً في باقات اقتصادية متكاملة تمنح سيارتك كل ما تحتاجه في زيارة واحدة</p>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Package 1: غسيل + تغيير زيت (الأساسية) -->
+          <div class="package-card">
+            <div class="package-header">
+              <span class="package-badge">الباقة السريعة</span>
+              <h3 class="package-name">غسيل + تغيير زيت</h3>
+              <p class="package-tagline">الصيانة السريعة الأكثر طلباً للعناية الدورية بسيارتك</p>
+              <div class="package-price-wrap">
+                <span class="currency">ر.س</span>
+                <span class="price">189</span>
+                <span class="price-note">(سعر تجريبي)</span>
+              </div>
+            </div>
+
+            <div class="package-body">
+              <ul class="package-features">
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>تغيير زيت تخليقي 5,000 كم معتمد</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>استبدال فلتر زيت المحرك الأصلي</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>فحص سوائل السيارة (الفرامل، الرديتر، المساحات)</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>غسيل خارجي كامل برغوة النانو النشطة</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>كنس داخلي سريع وتلميع كفرات وتعطير</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="package-footer">
+              <button type="button" class="btn btn-outline-navy w-full open-booking-modal" data-service="باقة: غسيل + تغيير زيت (189 ر.س)">
+                <span>احجز باقة غسيل + زيت</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Package 2: الباقة الفضية الأكثر طلباً -->
+          <div class="package-card featured-package">
+            <div class="popular-ribbon">الأكثر طلباً ⭐</div>
+            <div class="package-header">
+              <span class="package-badge orange-badge">الباقة المتكاملة</span>
+              <h3 class="package-name">الصيانة الدورية + غسيل ملكي</h3>
+              <p class="package-tagline">الخيار الأمثل كل 10,000 كم لضمان أداء ناعم ونظافة متألقة</p>
+              <div class="package-price-wrap">
+                <span class="currency">ر.س</span>
+                <span class="price">329</span>
+                <span class="price-note">(سعر تجريبي)</span>
+              </div>
+            </div>
+
+            <div class="package-body">
+              <ul class="package-features">
+                <li>
+                  <svg class="check-icon orange-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>تغيير زيت تخليقي كامل 10,000 كم + فلتر أصلي</span>
+                </li>
+                <li>
+                  <svg class="check-icon orange-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>فحص كمبيوتر شامل للأعطال والحساسات</span>
+                </li>
+                <li>
+                  <svg class="check-icon orange-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>كشف سماكة الفرامل وفحص كفاءة البطارية والدينامو</span>
+                </li>
+                <li>
+                  <svg class="check-icon orange-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>غسيل ملكي خارجي وداخلي بالبخار مع التعقيم</span>
+                </li>
+                <li>
+                  <svg class="check-icon orange-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>طبقة واكس حماية سريعة وتلميع جنوط احترافي</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="package-footer">
+              <button type="button" class="btn btn-primary-orange w-full open-booking-modal" data-service="باقة: الصيانة الدورية + غسيل ملكي (329 ر.س)">
+                <span>احجز الباقة الأكثر طلباً</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Package 3: باقة VIP الذهبية -->
+          <div class="package-card">
+            <div class="package-header">
+              <span class="package-badge">الباقة الملكية VIP</span>
+              <h3 class="package-name">تجديد شامل: ميكانيك + تلميع</h3>
+              <p class="package-tagline">العناية القصوى التي تعيد سيارتك لحالة الوكالة ميكانيكياً ومظهرياً</p>
+              <div class="package-price-wrap">
+                <span class="currency">ر.س</span>
+                <span class="price">549</span>
+                <span class="price-note">(سعر تجريبي)</span>
+              </div>
+            </div>
+
+            <div class="package-body">
+              <ul class="package-features">
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>فحص ميكانيكي وكهربائي كامل من 35 نقطة</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>تغيير زيت 10,000 كم + فلتر هواء + فلتر مكيف</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>صيانة وفحص دورة التكييف وزيادة الفريون</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>تلميع بودي كامل مرحلتين مع إزالة الخدوش الدقيقة</span>
+                </li>
+                <li>
+                  <svg class="check-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>غسيل محرك جاف احترافي + تعقيم مقصورة كامل بالأوزون</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="package-footer">
+              <button type="button" class="btn btn-outline-navy w-full open-booking-modal" data-service="باقة: VIP التجديد الشامل (549 ر.س)">
+                <span>احجز باقة VIP الشاملة</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Why Us Section (لماذا نحن: سرعة، ضمان، فنيين متخصصين) -->
+    <section class="section why-us-section" id="why-us">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">قيمنا وتميزنا</span>
+          <h2 class="section-title">لماذا تختار مركز السرعة لسيارتك؟</h2>
+          <p class="section-subtitle">صممنا خدماتنا لتوفر عليك عناء التنقل بين ورش الميكانيك ومغاسل السيارات، مع التزام صارم بثلاث ركائز</p>
+        </div>
+
+        <div class="why-us-grid">
+          <!-- 1. سرعة -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="why-card-title">1. سرعة في الإنجاز</h3>
+            <p class="why-card-text">
+              نقدر قيمة وقتك! تم تجهيز مركزنا بمسارات عمل متوازية تتيح فحص وصيانة سيارتك وغسيلها في آن واحد، مع التزام صارم بمواعيد التسليم المحددة وخيارات المسار السريع للحجوزات المسبقة.
+            </p>
+            <div class="why-feature-tag">متوسط إنجاز الباقات: 45 دقيقة</div>
+          </div>
+
+          <!-- 2. ضمان -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="why-card-title">2. ضمان معتمد وموثوق</h3>
+            <p class="why-card-text">
+              راحتك وأمانك خط أحمر. نقدم ضماناً رسمياً ومكتوباً على كافة قطع الغيار الأصلية وأجور اليد، وفاتورة إلكترونية مفصلة لكل فحص وإصلاح، لتنطلق بسيارتك وأنت مطمئن 100%.
+            </p>
+            <div class="why-feature-tag">ضمان حقيقي يصل إلى سنة كاملة</div>
+          </div>
+
+          <!-- 3. فنيين متخصصين -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="why-card-title">3. فنيون وخبراء متخصصون</h3>
+            <p class="why-card-text">
+              فريقنا مكون من مهندسين وفنيين معتمدين ذوي خبرات طويلة في تشخيص وصيانة مختلف الموديلات اليابانية، الألمانية، الأمريكية والكورية، مدربين على أحدث تقنيات الفحص الدقيق والنانو كير.
+            </p>
+            <div class="why-feature-tag">شهادات فنية وتدريب دوري مستمر</div>
+          </div>
+        </div>
+
+        <!-- Extra Highlight Banner -->
+        <div class="why-banner">
+          <div class="why-banner-content">
+            <div class="banner-badge">محطة واحدة تغنيك عن الجميع</div>
+            <h3 class="banner-title">لماذا تزور ورشة صيانة ومغسلة سيارات منفصلتين؟</h3>
+            <p class="banner-desc">في مركز السرعة تجد الميكانيكي الماهر والمختص في الغسيل والتلميع في نفس المكان — وفر 50% من وقتك ومجهودك!</p>
+          </div>
+          <div class="why-banner-action">
+            <button type="button" class="btn btn-primary-orange btn-lg open-booking-modal" data-service="حجز من قسم لماذا نحن">
+              <span>احجز تجربتك الآن</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Testimonials Section (آراء العملاء - 3 آراء وهمية) -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">تجارب حقيقية</span>
+          <h2 class="section-title">ماذا يقول عملاؤنا عن مركز السرعة؟</h2>
+          <p class="section-subtitle">نفخر بثقة مئات العملاء الذين يعتمدون علينا دورياً لصيانة ونظافة سياراتهم</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Review 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-label">5.0 / 5</span>
+            </div>
+            <p class="testimonial-text">
+              "تجربة استثنائية بكل المقاييس! غيّرت زيت وفلتر وصلّحت صوت بالفرامل كان مزعجني من شهور، وفي نفس الوقت غسلوا السيارة ونظفوا الداخلي بالبخار. استلمتها خلال ساعة واحدة نظيفة تماماً وهادئة كأنها جديدة. فنيين محترمين وأمانة عالية في الفحص."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-1">ف.ش</div>
+              <div class="author-info">
+                <h4 class="author-name">م. فهد الشمري</h4>
+                <span class="author-car">تويوتا لاندكروزر 2022 • عميل دوري</span>
+              </div>
+            </div>
+            <div class="testimonial-badge-verified">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>خدمة مؤكدة (ميكانيك + غسيل ملكي)</span>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card featured-testimonial">
+            <div class="testimonial-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-label">5.0 / 5</span>
+            </div>
+            <p class="testimonial-text">
+              "أول مركز أزوره وأشعر بالراحة التامة. شرحوا لي المشكلة في التكييف بجهاز كشف التسريب وشحنوا الفريون بضمان، والتلميع الخارجي أزال دوائر الغسيل القديمة بشكل مذهل. وفروا علي الذهاب لأكثر من ورشة ومغسلة. أنصح به بشدة لكل من يهتم بسيارته."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-2">س.ق</div>
+              <div class="author-info">
+                <h4 class="author-name">د. سارة القحطاني</h4>
+                <span class="author-car">لكزس ES 350 • باقة VIP للتجديد</span>
+              </div>
+            </div>
+            <div class="testimonial-badge-verified">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>خدمة مؤكدة (تكييف + تلميع بودي كامل)</span>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-label">5.0 / 5</span>
+            </div>
+            <p class="testimonial-text">
+              "السرعة فعلاً على اسم المركز! حجزت موعد بالواتساب وجيت في الوقت ودخلت سيارتي مباشرة بدون انتظار. باقة غسيل + تغيير الزيت ممتازة وسعرها اقتصادي جداً مقارنة بالجودة والاهتمام بالتفاصيل. تعامل راقي واستقبال ممتاز."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-3">ع.غ</div>
+              <div class="author-info">
+                <h4 class="author-name">أ. عمر الغامدي</h4>
+                <span class="author-car">مرسيدس E-Class • باقة غسيل + زيت</span>
+              </div>
+            </div>
+            <div class="testimonial-badge-verified">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>خدمة مؤكدة (باقة السرعة الاقتصادية)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Location & Working Hours (الموقع وساعات العمل) -->
+    <section class="section location-section" id="location">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">تفضل بزيارتنا</span>
+          <h2 class="section-title">الموقع وساعات العمل</h2>
+          <p class="section-subtitle">موقع استراتيجي يسهل الوصول إليه مع مواقف واسعة وصالة انتظار مجهزة ومكيفة بالكامل</p>
+        </div>
+
+        <div class="location-wrapper">
+          <!-- Hours & Details Card -->
+          <div class="location-info-card">
+            <div class="info-card-header">
+              <div class="info-status-pill">
+                <span class="status-pulse"></span>
+                <span>نستقبلكم طوال أيام الأسبوع</span>
+              </div>
+              <h3 class="info-card-title">مواعيد العمل الرسمية</h3>
+            </div>
+
+            <div class="hours-list">
+              <div class="hours-row">
+                <div class="day-col">
+                  <span class="day-name">السبت إلى الخميس</span>
+                  <span class="day-type">أيام العمل الرئيسية</span>
+                </div>
+                <div class="time-col">
+                  <span class="time-val">8:00 صباحاً – 10:00 مساءً</span>
+                  <span class="time-badge">دوام متواصل</span>
+                </div>
+              </div>
+
+              <div class="hours-row highlight-row">
+                <div class="day-col">
+                  <span class="day-name">يوم الجمعة</span>
+                  <span class="day-type">نهاية الأسبوع</span>
+                </div>
+                <div class="time-col">
+                  <span class="time-val">2:00 ظهراً – 10:00 مساءً</span>
+                  <span class="time-badge">بعد صلاة الجمعة</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact & Address Points -->
+            <div class="contact-details-box">
+              <div class="contact-point">
+                <div class="point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="point-text">
+                  <strong>العنوان:</strong>
+                  <span>طريق الملك فهد، تقاطع شارع التخصصي، حي الصحافة، الرياض</span>
+                </div>
+              </div>
+
+              <div class="contact-point">
+                <div class="point-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="point-text">
+                  <strong>الهاتف والاتصال المباشر:</strong>
+                  <a href="tel:+966501234567" dir="ltr" class="phone-link">+966 50 123 4567</a>
+                </div>
+              </div>
+
+              <div class="contact-point">
+                <div class="point-icon whatsapp-point-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </div>
+                <div class="point-text">
+                  <strong>حجز واتساب السريع:</strong>
+                  <span>خدمة عملاء وحجز فوري على مدار الساعة</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-actions">
+              <button type="button" class="btn btn-primary-orange open-booking-modal" data-service="حجز موعد من قسم الموقع">
+                <span>احجز موعدك الآن</span>
+              </button>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-navy">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                <span>فتح في خرائط Google</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Stylized Visual Map Display -->
+          <div class="location-map-card">
+            <div class="map-visual-placeholder">
+              <div class="map-grid-overlay"></div>
+              <div class="map-center-pin">
+                <div class="pulse-ring"></div>
+                <div class="pin-marker">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                </div>
+                <div class="pin-popup">
+                  <strong>مركز السرعة</strong>
+                  <span>ميكانيك • غسيل وتلميع</span>
+                  <span class="pin-badge">موقع المركز الرئيسي</span>
+                </div>
+              </div>
+              <div class="map-street-label street-1">طريق الملك فهد الرئيسي</div>
+              <div class="map-street-label street-2">شارع التخصصي</div>
+            </div>
+            <div class="map-card-footer">
+              <div class="footer-tip">
+                <svg class="icon-sm text-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                <span>مواقف مخصصة للعملاء مع ضيافة مجانية في صالة الانتظار</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. Floating WhatsApp Button & Booking Modal -->
+  <div class="whatsapp-floating-wrap">
+    <a href="https://wa.me/966501234567?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D8%B1%D9%83%D8%B2%20%D8%A7%D9%84%D8%B3%D8%B1%D8%B9%D8%A9%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D8%A3%D9%88%20%D8%BA%D8%B3%D9%8A%D9%84%20%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%D9%8A" target="_blank" rel="noopener noreferrer" class="whatsapp-floating-btn" id="whatsappFloatingBtn" aria-label="تواصل معنا عبر واتساب">
+      <span class="whatsapp-tooltip">تواصل أو احجز فوراً عبر واتساب</span>
+      <svg class="whatsapp-svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span class="whatsapp-ring"></span>
+    </a>
+  </div>
+
+  <!-- Interactive Booking Modal (ينشئ رسالة واتساب جاهزة ومفصلة) -->
+  <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <div class="modal-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div>
+            <h3 class="modal-title" id="modalTitle">حجز موعد عبر واتساب</h3>
+            <p class="modal-subtitle">اختر الخدمة وسيتم فتح واتساب برسالة جاهزة ومفصلة فوراً</p>
+          </div>
+        </div>
+        <button type="button" class="modal-close" id="modalCloseBtn" aria-label="إغلاق">✕</button>
+      </div>
+
+      <form id="bookingForm" class="modal-form">
+        <div class="form-group">
+          <label for="clientName" class="form-label">الاسم الكريم (اختياري)</label>
+          <input type="text" id="clientName" class="form-input" placeholder="مثال: أبو فهد">
+        </div>
+
+        <div class="form-group">
+          <label for="carModel" class="form-label">نوع وموديل السيارة</label>
+          <input type="text" id="carModel" class="form-input" placeholder="مثال: لاندكروزر 2021 أو كامري 2020" required>
+        </div>
+
+        <div class="form-group">
+          <label for="serviceSelect" class="form-label">الخدمة أو الباقة المطلوبة</label>
+          <select id="serviceSelect" class="form-select" required>
+            <optgroup label="باقات مجمعة (توفير واكتمال)">
+              <option value="باقة: غسيل + تغيير زيت (189 ر.س)">باقة غسيل + تغيير زيت (189 ر.س - تجريبي)</option>
+              <option value="باقة: الصيانة الدورية + غسيل ملكي (329 ر.س)" selected>الباقة الفضية الأكثر طلباً: صيانة + غسيل ملكي (329 ر.س)</option>
+              <option value="باقة: VIP التجديد الشامل (549 ر.س)">باقة VIP الشاملة: ميكانيك + تلميع كامل (549 ر.س)</option>
+            </optgroup>
+            <optgroup label="خدمات الميكانيك الفردية">
+              <option value="فحص شامل وكمبيوتر">فحص شامل وكمبيوتر</option>
+              <option value="تغيير زيت وفلاتر">تغيير الزيوت والفلاتر الأصلية</option>
+              <option value="صيانة وتغيير الفرامل">صيانة وتغيير الفرامل وهوبات</option>
+              <option value="فحص وتبديل بطارية">فحص وتبديل بطارية معتمدة</option>
+              <option value="صيانة وشحن تكييف">صيانة وشحن فريون المكيف</option>
+            </optgroup>
+            <optgroup label="خدمات الغسيل والتلميع الفردية">
+              <option value="غسيل خارجي نانو">غسيل خارجي نانو ورغوة ثلجية</option>
+              <option value="تنظيف داخلي بالبخار وتعقيم">تنظيف داخلي عميق بالبخار وتعقيم</option>
+              <option value="تلميع وتشميع احترافي">تلميع وتشميع بودي احترافي</option>
+              <option value="تنظيف وحماية المحرك">تنظيف وغسيل جاف للمحرك</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="bookingDate" class="form-label">اليوم أو الوقت المفضل للزيارة</label>
+          <input type="text" id="bookingDate" class="form-input" placeholder="مثال: اليوم مساءً أو غداً الساعة 5 عصراً">
+        </div>
+
+        <div class="form-group">
+          <label for="extraNotes" class="form-label">ملاحظات إضافية أو وصف مشكلة (اختياري)</label>
+          <textarea id="extraNotes" class="form-textarea" rows="2" placeholder="هل توجد مشكلة أو صوت معين في السيارة؟"></textarea>
+        </div>
+
+        <div class="modal-notice">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span>عند الضغط، سيتم توجيهك مباشرة لتطبيق واتساب مع نص الرسالة الجاهزة.</span>
+        </div>
+
+        <button type="submit" class="btn btn-whatsapp-submit w-full" id="submitBookingBtn">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>تأكيد الحجز عبر واتساب الآن</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer (التذييل) -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo footer-logo">
+            <div class="logo-icon-box">
+              <svg class="logo-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+                <circle cx="7" cy="17" r="2"/>
+                <path d="M9 17h6"/>
+                <circle cx="17" cy="17" r="2"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title text-white">مركز السرعة</span>
+              <span class="logo-subtitle text-orange">ميكانيك • غسيل وتلميع</span>
+            </div>
+          </div>
+          <p class="footer-about">
+            المركز الرائد والمتكامل لصيانة السيارات وغسيلها في الرياض. نوفر فحصاً ميكانيكياً دقيقاً وخدمات غسيل وتلميع فائقة الدقة بأسعار تنافسية وضمان حقيقي.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">أقسام الموقع</h4>
+          <ul class="footer-nav">
+            <li><a href="#hero">الرئيسية</a></li>
+            <li><a href="#services">خدمات الميكانيك والغسيل</a></li>
+            <li><a href="#packages">الباقات المجمعة والتوفير</a></li>
+            <li><a href="#why-us">لماذا مركز السرعة</a></li>
+            <li><a href="#testimonials">آراء وتقييمات العملاء</a></li>
+            <li><a href="#location">الموقع وساعات العمل</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">خدماتنا الرئيسية</h4>
+          <ul class="footer-nav">
+            <li><a href="#mechanic-services">فحص كمبيوتر وكشف أعطال</a></li>
+            <li><a href="#mechanic-services">تغيير الزيوت وفلاتر الوكالة</a></li>
+            <li><a href="#mechanic-services">صيانة الفرامل والتكييف</a></li>
+            <li><a href="#wash-services">غسيل خارجي نانو ورغوي</a></li>
+            <li><a href="#wash-services">تنظيف داخلي وتعقيم بالبخار</a></li>
+            <li><a href="#wash-services">تلميع ساطع وحماية واكس</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">تواصل سريع</h4>
+          <div class="footer-contact-info">
+            <p><strong>الهاتف:</strong> <a href="tel:+966501234567" dir="ltr">+966 50 123 4567</a></p>
+            <p><strong>الواتساب:</strong> <a href="https://wa.me/966501234567" target="_blank" rel="noopener noreferrer">دردشة واتساب مباشرة</a></p>
+            <p><strong>الموقع:</strong> طريق الملك فهد، الرياض</p>
+            <button type="button" class="btn btn-primary-orange btn-sm mt-3 open-booking-modal" data-service="حجز من الفوتر">
+              <span>احجز موعدك الآن</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Critical Prompt Requirement: "في الأسفل عبارة: نموذج عرض تجريبي" -->
+      <div class="demo-prototype-badge">
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <span>نموذج عرض تجريبي</span>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          جميع الحقوق محفوظة © <span id="currentYear">2026</span> مركز السرعة لخدمات السيارات المتكاملة.
+        </p>
+        <p class="footer-prototype-note">
+          هذه الصفحة عبارة عن نموذج عرض تجريبي وتصميم مقترح لمركز صيانة وغسيل سيارات.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
